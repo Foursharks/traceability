@@ -26,9 +26,6 @@ const dadCallback = () => {
   // record a generic message and send it to Rollbar
   rollbar.log('Callback is working?')
 }
-
-
-
 app.listen(4000, () => console.log(`server running on 4000`))
 
 
