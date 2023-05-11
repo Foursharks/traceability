@@ -22,8 +22,11 @@ const getDadJoke = () => axios.get("https://icanhazdadjoke.com/",{
 //Add an event listener to the button so that when clicked the clicked function runs
 dadBtn.addEventListener(`click`, getDadJoke);
 
-// record a generic message and send it to Rollbar
-rollbar.log('Hello world!')
+const dadCallback = () => {
+  // record a generic message and send it to Rollbar
+  rollbar.log('Callback is working?')
+}
+
 
 
 app.listen(4000, () => console.log(`server running on 4000`))
